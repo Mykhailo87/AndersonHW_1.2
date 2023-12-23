@@ -1,13 +1,17 @@
-const value1 = prompt();
-const value2 = prompt();
-
-function newValue (a,b){
-    if(isNaN(a) || isNaN(b) || a.includes(' ') || b.includes(' ')){
+function checkingEntetValue (){
+    const value1 = prompt()
+    if(isNaN(value1) || value1.includes(' ')){
         console.log('Некорректный ввод!')
         return
-    }else(
-        console.log((+a).toString(+b))
-    )
+    }
+
+    const value2 = prompt()
+    if(isNaN(value2) || value2.includes(' ')){
+        console.log('Некорректный ввод!')
+        return
+    }
+
+    console.log(`Ответ: ${Number(value1)+Number(value2)}, ${Number(value1)/Number(value2)}`)
 }
 
-newValue(value1,value2);
+checkingEntetValue();
