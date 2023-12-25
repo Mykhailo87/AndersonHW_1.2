@@ -1,17 +1,23 @@
-function checkingEntetValue (){
-    const value1 = prompt()
-    if(isNaN(value1) || value1.includes(' ')){
-        console.log('Некорректный ввод!')
-        return
+function checkingEnterValue() {
+
+    function checkValueValidation(checkingValue) {
+        return (isNaN(checkingValue) || checkingValue === ' '); 
+    }
+
+    const value1 = prompt();
+
+    if (checkValueValidation(value1)) {
+        return console.log('Некорректный ввод!');
     }
 
     const value2 = prompt()
-    if(isNaN(value2) || value2.includes(' ')){
-        console.log('Некорректный ввод!')
-        return
+
+    if (checkValueValidation(value2)) {
+        return console.log('Некорректный ввод!');
     }
 
-    console.log(`Ответ: ${Number(value1)+Number(value2)}, ${Number(value1)/Number(value2)}`)
+
+    return console.log(`Ответ: ${Number(value1)+Number(value2)}, ${Number(value1)/Number(value2)}`);
 }
 
-checkingEntetValue();
+checkingEnterValue();
