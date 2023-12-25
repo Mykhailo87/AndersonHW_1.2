@@ -1,7 +1,6 @@
 function checkingEnterValue() {
-
     function checkValueValidation(checkingValue) {
-        return (isNaN(checkingValue) || checkingValue === ' '); 
+        return (isNaN(checkingValue) || checkingValue.includes(' ') || checkingValue === ''); 
     }
 
     const value1 = prompt();
@@ -16,7 +15,8 @@ function checkingEnterValue() {
         return console.log('Некорректный ввод!');
     }
 
-    return console.log(`Ответ: ${Number(value1)+Number(value2)}, ${Number(value1)/Number(value2)}`);
+    return console.log(`Ответ: ${Number(value1) + Number(value2)}, ${Number(value1) / 
+    Number(value2)}`);
 }
 
 checkingEnterValue();
