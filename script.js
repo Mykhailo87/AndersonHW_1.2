@@ -16,7 +16,6 @@ function checkingEnterValue() {
         return console.log('Некорректный ввод!');
     }
 
-
     return console.log(`Ответ: ${Number(value1)+Number(value2)}, ${Number(value1)/Number(value2)}`);
 }
 
