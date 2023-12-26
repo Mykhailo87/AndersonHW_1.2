@@ -3,7 +3,6 @@ function checkValueValidation(checkingValue) {
 }
 
 function checkingEnterValue() {
-
     const value1 = prompt();
 
     if (checkValueValidation(value1)) {
