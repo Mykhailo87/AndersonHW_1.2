@@ -1,5 +1,5 @@
 function checkValueValidation(checkingValue) {
-    return (isNaN(checkingValue.trim()) || checkingValue.trim() === '');
+    return (isNaN(checkingValue) || checkingValue.trim() === '');
 }
 
 function checkingEnterValue() {
